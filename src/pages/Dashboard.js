@@ -291,7 +291,7 @@ const Dashboard = () => {
                 <div className="mt-4 p-3 bg-gray-50 rounded-lg">
                   <p className="text-xs font-medium text-gray-700 mb-1">Share Link:</p>
                   <p className="text-sm text-gray-600">
-                    🔗http://localhost:3001/share/{folder.shareId}
+                    🔗https://ezpz-share.netlify.app/share/{folder.shareId}
                   </p>
                 </div>
               </div>
