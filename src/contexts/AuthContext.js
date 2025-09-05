@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
   // Configure axios defaults
   useEffect(() => {
     // Set base URL
-    axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+    axios.defaults.baseURL = 'https://ezpzshare-backend-production.up.railway.app';
     
     // Set auth token if it exists
     const token = localStorage.getItem('ezpzshare_token');

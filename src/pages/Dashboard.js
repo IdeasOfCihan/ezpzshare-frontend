@@ -337,7 +337,7 @@ const Dashboard = () => {
                               <div className="flex items-center space-x-2 ml-4">
                                 {canPreview(file.fileType) && (
                                   <a
-                                    href={`http://localhost:5000/api/share/${folder.shareId}/preview/${file._id}`}
+                                    href={`https://ezpzshare-backend-production.up.railway.app${folder.shareId}/preview/${file._id}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center px-2 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded hover:bg-blue-100 transition-colors"

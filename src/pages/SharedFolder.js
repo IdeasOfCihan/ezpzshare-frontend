@@ -45,7 +45,7 @@ const SharedFolder = () => {
   const downloadFile = async (fileId, fileName) => {
     setLoading(true);
     try {
-      const response = await axios.get(`http://localhost:5000/api/share/${shareId}/download/${fileId}`);
+      const response = await axios.get(`/api/share/${shareId}/download/${fileId}`);
       const downloadUrl = response.data.downloadUrl;
       
       // Create a temporary link and trigger download
@@ -66,7 +66,7 @@ const SharedFolder = () => {
 
   const previewFile = async (fileId, fileName) => {
     try {
-      const previewUrl = `http://localhost:5000/api/share/${shareId}/preview/${fileId}`;
+      const previewUrl = `https://ezpzshare-backend-production.up.railway.app/api/share/${shareId}/preview/${fileId}`;
       window.open(previewUrl, '_blank');
     } catch (error) {
       toast.error('Preview not available for this file type');
